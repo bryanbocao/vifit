@@ -35,6 +35,44 @@ ViFiT
 ## Pre-trained Models
 Pre-trained models trained by DIoU loss can be downloaded in [Google Drive](https://drive.google.com/drive/folders/1BLqqK6U6l3oJnIpUAsGztQ3a7oAyqzdH?usp=sharing) or [OneDrive](https://1drv.ms/f/s!AqkVlEZgdjnYlGhbOzrpskp6TLTz?e=vPcZBl).
 
+## Code Instructions
+It is recommended to use Docker in this work. I have provided the environments in the [bryanbocao/vifit](https://hub.docker.com/repository/docker/bryanbocao/vifit/general]) container.
+Usage:
+#### Pulling Docker Image
+```
+docker pull bryanbocao/vifit
+```
+#### Check Images
+```
+docker image ls
+```
+```
+REPOSITORY                                                               TAG       IMAGE ID       CREATED         SIZE
+bryanbocao/vifit                                                         latest    6c4d67f3d122   2 months ago    13.5GB
+```
+
+#### Run and Detach a Container
+```
+docker run -d --ipc=host --shm-size=16384m -it -v /:/share --gpus all --network=bridge bryanbocao/vifit /bin/bash
+```
+
+#### Show Running Containers
+```
+docker ps -a
+```
+```
+CONTAINER ID   IMAGE                                                                           COMMAND       CREATED        STATUS                    PORTS     NAMES
+489616f0a862   bryanbocao/vifit                                                                "/bin/bash"   5 days ago     Up 5 days                           cranky_haibt
+```
+#### Enter a Container
+```
+docker exec -it <CONTAINER_ID> /bin/bash
+```
+In this example:
+```
+docker exec -it 489616f0a862 /bin/bash
+```
+
 # Citation
 BibTeX:
 ```
