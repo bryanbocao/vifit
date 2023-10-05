@@ -32,6 +32,9 @@ ViFiT
 ### Vi-Fi Dataset
 [Original Dataset link](https://sites.google.com/winlab.rutgers.edu/vi-fidataset/home), [paperswithcode link](https://paperswithcode.com/dataset/vi-fi-multi-modal-dataset).
 
+## Pre-trained Models
+Pre-trained models trained by DIoU loss can be downloaded in [Google Drive](https://drive.google.com/drive/folders/1BLqqK6U6l3oJnIpUAsGztQ3a7oAyqzdH?usp=sharing) or [OneDrive](https://1drv.ms/f/s!AqkVlEZgdjnYlGhbOzrpskp6TLTz?e=vPcZBl).
+
 # Citation
 BibTeX:
 ```
