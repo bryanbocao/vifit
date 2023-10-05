@@ -73,6 +73,25 @@ In this example:
 docker exec -it 489616f0a862 /bin/bash
 ```
 
+#### Train ViFiT
+Under the ```src/model_v4.2``` folder inside the container created by the commands above. Note that you need to specify ```<MACHINE_NAME>```.
+```
+python3 Xformer_IFcC2C.py -ud -n -rm train -te 500 -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 0 -tsid_idx 5 -lw 30 -lf DIOU
+python3 Xformer_IFcC2C.py -ud -n -rm train -te 500 -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 1 -tsid_idx 0 -lw 30 -lf DIOU
+python3 Xformer_IFcC2C.py -ud -n -rm train -te 500 -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 2 -tsid_idx 13 -lw 30 -lf DIOU
+python3 Xformer_IFcC2C.py -ud -n -rm train -te 500 -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 3 -tsid_idx 8 -lw 30 -lf DIOU
+python3 Xformer_IFcC2C.py -ud -n -rm train -te 500 -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 4 -tsid_idx 4 -lw 30 -lf DIOU
+```
+
+#### Test ViFiT
+```
+python3 Xformer_IFcC2C.py -ud -n -rm test -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 0 -tsid_idx 5 -lw 30  -lf DIOU -ld_tr_eid -tr_eid 420 -ffo -mrf -w_s 29
+python3 Xformer_IFcC2C.py -ud -n -rm test -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 1 -tsid_idx 0 -lw 30  -lf DIOU -ld_tr_eid -tr_eid 204 -ffo -mrf -w_s 29
+python3 Xformer_IFcC2C.py -ud -n -rm test -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 2 -tsid_idx 13 -lw 30 -lf DIOU -ld_tr_eid -tr_eid 165 -ffo -mrf -w_s 29
+python3 Xformer_IFcC2C.py -ud -n -rm test -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 3 -tsid_idx 8 -lw 30 -lf DIOU -ld_tr_eid -tr_eid 204 -ffo -mrf -w_s 29
+python3 Xformer_IFcC2C.py -ud -n -rm test -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 4 -tsid_idx 4 -lw 30 -lf DIOU -ld_tr_eid -tr_eid 248 -ffo -mrf -w_s 29
+```
+
 # Citation
 BibTeX:
 ```
