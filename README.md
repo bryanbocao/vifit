@@ -8,6 +8,8 @@ Mobile Computing And Networking (MobiCom), 3rd ACM MobiCom Workshop on Integrate
 ISACom '23: Proceedings of the 3rd ACM MobiCom Workshop on Integrated Sensing and Communications SystemsOctober 2023
 Pages 13–18 https://doi.org/10.1145/3615984.3616503
 
+[arXiv 2310.03140](https://arxiv.org/pdf/2310.03140.pdf)
+
 ## Abstract
 Tracking subjects in videos is one of the most widely used functions in camera-based IoT applications such as security surveillance, smart city traffic safety enhancement, vehicle to pedestrian communication and so on. In the computer vision domain, tracking is usually achieved by first detecting subjects, then associating detected bounding boxes across video frames. Typically, frames are transmitted to a remote site for processing, incurring high latency and network costs. To address this, we propose ViFiT, a transformer-based model that reconstructs vision bounding box trajectories from phone data (IMU and Fine Time Measurements). It leverages a transformer's ability of better modeling long-term time series data. ViFiT is evaluated on Vi-Fi Dataset, a large-scale multimodal dataset in 5 diverse real-world scenes, including indoor and outdoor environments. Results demonstrate that ViFiT outperforms the state-of-the-art approach for cross-modal reconstruction in LSTM Encoder-Decoder architecture X-Translator and achieves a high frame reduction rate as 97.76% with IMU and Wi-Fi data.
 
