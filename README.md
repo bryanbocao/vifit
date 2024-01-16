@@ -29,6 +29,12 @@ Vi-Fi Transformer (_ViFiT_) Architecture. _ViFiT_ is comprised of multimodal Enc
 
 <img width="1186" alt="Screenshot 2024-01-16 at 2 25 10 PM" src="https://github.com/bryanbocao/vifit/assets/14010288/bb250e9a-e10b-4a32-84d1-78b2facceb4a">
 
+## Result
+<img width="300" alt="Screenshot 2024-01-16 at 2 31 29 PM" src="https://github.com/bryanbocao/vifit/assets/14010288/5f15513b-1c02-49ed-ac9c-f4544e556818">
+
+Samples of reconstructed vision tracklets _T<sub>c</sub>sub>′_ and ground truths _GT_ decorated in lighter (1st and 3rd rows) and darker colors (2nd and 4th rows), respectively (Best view in color). Indoor scene is shown in the 1st column while outdoor scenes are displayed from the 2nd to the 5th columns.
+<img width="1571" alt="Screenshot 2024-01-16 at 2 32 21 PM" src="https://github.com/bryanbocao/vifit/assets/14010288/e8bac87d-1dbc-4bcf-99f9-35cc1e3f54b6">
+
 
 ## Dataset
 ### Dataset for Model - dfv4.2
