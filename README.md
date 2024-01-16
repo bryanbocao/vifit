@@ -113,10 +113,8 @@ python3 Xformer_IFcC2C.py -ud -n -rm test -nan linear_interp -tr_md_id Xformer_I
 python3 Xformer_IFcC2C.py -ud -n -rm test -nan linear_interp -tr_md_id Xformer_IFcC2C -m <MACHINE_NAME> -sc 4 -tsid_idx 4 -lw 30 -lf DIOU -ld_tr_eid -tr_eid 248 -ffo -mrf -w_s 29
 ```
 
-[Reality-Aware Networks group website link](https://ashwinashok.github.io/realityawarenetworks/)
-
 # Citation
-BibTeX:
+ViFiT BibTeX:
 ```
 @inproceedings{cao2023vifit,
   title={ViFiT: Reconstructing Vision Trajectories from IMU and Wi-Fi Fine Time Measurements},
@@ -126,3 +124,29 @@ BibTeX:
   year={2023}
 }
 ```
+
+Vi-Fi (dataset) BibTex:
+```
+@inproceedings{liu2022vi,
+  title={Vi-Fi: Associating Moving Subjects across Vision and Wireless Sensors},
+  author={Liu, Hansi and Alali, Abrar and Ibrahim, Mohamed and Cao, Bryan Bo and Meegan, Nicholas and Li, Hongyu and Gruteser, Marco and Jain, Shubham and Dana, Kristin and Ashok, Ashwin and others},
+  booktitle={2022 21st ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)},
+  pages={208--219},
+  year={2022},
+  organization={IEEE}
+}
+```
+```
+@misc{vifisite,
+  author        = "Hansi Liu",
+  title         = "Vi-Fi Dataset",
+  month         = "Dec. 05,", 
+  year          = "2022 [Online]",
+  url           = "https://sites.google.com/winlab.rutgers.edu/vi-fidataset/home"
+}
+```
+
+[Reality-Aware Networks Project Website](https://ashwinashok.github.io/realityawarenetworks/)
+
+# Acknowledgement
+This research has been supported by the National Science Foundation (NSF) under Grant Nos. CNS-2055520, CNS1901355, CNS-1901133. 
