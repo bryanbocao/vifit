@@ -14,8 +14,21 @@ Pages 13–18 https://doi.org/10.1145/3615984.3616503
 Tracking subjects in videos is one of the most widely used functions in camera-based IoT applications such as security surveillance, smart city traffic safety enhancement, vehicle to pedestrian communication and so on. In the computer vision domain, tracking is usually achieved by first detecting subjects, then associating detected bounding boxes across video frames. Typically, frames are transmitted to a remote site for processing, incurring high latency and network costs. To address this, we propose ViFiT, a transformer-based model that reconstructs vision bounding box trajectories from phone data (IMU and Fine Time Measurements). It leverages a transformer's ability of better modeling long-term time series data. ViFiT is evaluated on Vi-Fi Dataset, a large-scale multimodal dataset in 5 diverse real-world scenes, including indoor and outdoor environments. Results demonstrate that ViFiT outperforms the state-of-the-art approach for cross-modal reconstruction in LSTM Encoder-Decoder architecture X-Translator and achieves a high frame reduction rate as 97.76% with IMU and Wi-Fi data.
 
 ## Motivation
+Two types of challenges using vision-only methods: **(a) Frame Drop**, an entire frame in the next timestamp is not available (e.g. due to temporal down sampling to save network bandwidth, network losses, etc.), resulting in missing visual information for estimating object of interests’ detections (cyan); **(b) Salient Part Missing**: salient parts of objects are missing due to occlusion in the environment (purple) such as the truck or moving out of the camera’s view (orange). Missing parts are displayed in lower opacity by dotted lines. Each color represents one identity of subject of interest. Detection ground truths are shown by solid bounding boxes.
+<img width="1346" alt="Screenshot 2024-01-16 at 2 18 08 PM" src="https://github.com/bryanbocao/vifit/assets/14010288/f234dcd3-797e-45e2-9b5d-0730a0849cf7">
+
+## System Overview
 Learning lightweight phone sensor data with rich motion information by a transformer model to reconstruct trajectories in long missing frames, which reduce the volume of data transmitted via network.
 ![Screenshot from 2023-10-05 15-42-31](https://github.com/bryanbocao/vifit/assets/14010288/ee49af25-cd1e-49ec-b792-0822a38e065d)
+
+## Vi-Fi Transformer (ViFiT)
+_ViFiT_ consists of multimodal Encoders for (_T<sub>c</sub><sup>0</sup>_, _T<sub>i</sub>_ and _T<sub>f</sub>_ ) to extract features and Vision Decoder to reconstruct the whole visual trajectory of _T<sub>c</sub>′_ for the missing frames in a window with length _WL_. Note _T<sub>c</sub><sup>0</sup>_ denotes a vision tracklet with first frame only and _H_ denotes representation dimension.
+<img width="1463" alt="Screenshot 2024-01-16 at 2 20 09 PM" src="https://github.com/bryanbocao/vifit/assets/14010288/912a32e9-29b0-4b3d-870a-45fdef637655">
+
+Vi-Fi Transformer (_ViFiT_) Architecture. _ViFiT_ is comprised of multimodal Encoders for (_T<sub>c</sub><sup>0</sup>_, _T<sub>i</sub>_ and _T<sub>f</sub>_ ) depicted on the left side in parallel displayed with various degrees of opacity, as well as a Vision Decoder on the right. Information flow starts from the bottom left corner, where each tracklet for one modality (_T<sub>c</sub><sup>0</sup>_, _T<sub>i</sub>_ or _T<sub>f</sub>_ ) is fed into its own Encoder independently, including B blocks of transformer modules with Multi-head Self-attention (MSA). In the next step, Encoders generate multimodal representations, fused by concatenation (_X<sub>c</sub>′_, _X<sub>i</sub>′_, _X<sub>f</sub>′_ ) and are fed into the Vision Decoder to output bounding boxes (_Tc′_) in missing frames.
+
+<img width="1186" alt="Screenshot 2024-01-16 at 2 25 10 PM" src="https://github.com/bryanbocao/vifit/assets/14010288/bb250e9a-e10b-4a32-84d1-78b2facceb4a">
+
 
 ## Dataset
 ### Dataset for Model - dfv4.2
