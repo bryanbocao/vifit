@@ -1,12 +1,7 @@
 # Data
 
 #### News:
-01/16/2024 We released the synchronized version (**RAN4model_dfv4p4**) of our data for future usage. This version is convenient for your research without undergoing preprocessing the raw data again. You may find the download links in the table below:
-
-| | Google Drive | OneDrive|
-|--|--|--|
-| RAN4model_dfv4p4.zip | [link](https://drive.google.com/file/d/1tt458YclrKMMGG-P6lupuGAaN09bTsht/view?usp=sharing) | [link](https://1drv.ms/u/s!AqkVlEZgdjnYlSNt6e62k0jAl9x2?e=ZzzEMZ) |
-| RAN4model_dfv4p4 folder | [link](https://drive.google.com/drive/folders/1oZz2F7HmXwjV8rvS6I2H87ebL_MQwYy5?usp=sharing) | [link](https://1drv.ms/f/s!AqkVlEZgdjnYlRWGHeAAawAlaFCR?e=qketyS) |
+01/16/2024 We released the synchronized version (**RAN4model_dfv4p4**) of our data for future usage. This version is convenient for your research without undergoing preprocessing the raw data again. You may download the data in this [Google Drive link](https://drive.google.com/drive/folders/1fZmWWQoNIhkd7Fk9HhziCPotaCppHOLt?usp=sharing) or [OneDrive link](https://1drv.ms/f/s!AqkVlEZgdjnYoG6k1wMfgyrvbmSU?e=SRbar2).
 
 **RAN4model_dfv4p4** provides you with the convenient synchronized format for downstream tasks. In this document, we take one subject in scene4 from one outdoor sequence as an example to demonstrate the format.
 
