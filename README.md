@@ -10,6 +10,14 @@ Pages 13–18 https://doi.org/10.1145/3615984.3616503
 
 [arXiv 2310.03140](https://arxiv.org/pdf/2310.03140.pdf)
 
+# Vi-Fi Dataset
+
+**New** 01/16/2024: We released the synchronized version (**RAN4model_dfv4p4**) of our data for future usage. This version is convenient for your research without undergoing preprocessing the raw data again. Check out the details in the [DATA.md](https://github.com/bryanbocao/vitag/blob/main/DATA.md) file.
+
+[Dataset(raw data) link](https://sites.google.com/winlab.rutgers.edu/vi-fidataset/home)
+
+[paperswithcode link](https://paperswithcode.com/dataset/vi-fi-multi-modal-dataset)
+
 ## Abstract
 Tracking subjects in videos is one of the most widely used functions in camera-based IoT applications such as security surveillance, smart city traffic safety enhancement, vehicle to pedestrian communication and so on. In the computer vision domain, tracking is usually achieved by first detecting subjects, then associating detected bounding boxes across video frames. Typically, frames are transmitted to a remote site for processing, incurring high latency and network costs. To address this, we propose ViFiT, a transformer-based model that reconstructs vision bounding box trajectories from phone data (IMU and Fine Time Measurements). It leverages a transformer's ability of better modeling long-term time series data. ViFiT is evaluated on Vi-Fi Dataset, a large-scale multimodal dataset in 5 diverse real-world scenes, including indoor and outdoor environments. Results demonstrate that ViFiT outperforms the state-of-the-art approach for cross-modal reconstruction in LSTM Encoder-Decoder architecture X-Translator and achieves a high frame reduction rate as 97.76% with IMU and Wi-Fi data.
 
@@ -48,15 +56,6 @@ ViFiT
   |-src
      |-...
 ```
-
-
-# Vi-Fi Dataset
-
-**New** 01/16/2024: We released the synchronized version (**RAN4model_dfv4p4**) of our data for future usage. This version is convenient for your research without undergoing preprocessing the raw data again. Check out the details in the [DATA.md](https://github.com/bryanbocao/vitag/blob/main/DATA.md) file.
-
-[Dataset link](https://sites.google.com/winlab.rutgers.edu/vi-fidataset/home)
-
-[paperswithcode link](https://paperswithcode.com/dataset/vi-fi-multi-modal-dataset)
 
 ## Pre-trained Models
 Pre-trained models trained by DIoU loss can be downloaded in [Google Drive](https://drive.google.com/drive/folders/1BLqqK6U6l3oJnIpUAsGztQ3a7oAyqzdH?usp=sharing) or [OneDrive](https://1drv.ms/f/s!AqkVlEZgdjnYlGhbOzrpskp6TLTz?e=vPcZBl).
