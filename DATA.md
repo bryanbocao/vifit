@@ -124,6 +124,6 @@ Below are some visualizations of the data for ```subj0``` in sequence ```2021100
 
 
 # Vi-Fi Dataset
-[Official Dataset link](https://sites.google.com/winlab.rutgers.edu/vi-fidataset/home)
+[Official Dataset (Raw Data) link](https://sites.google.com/winlab.rutgers.edu/vi-fidataset/home)
 
 [paperswithcode link](https://paperswithcode.com/dataset/vi-fi-multi-modal-dataset)
