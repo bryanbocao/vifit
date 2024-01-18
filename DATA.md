@@ -127,3 +127,7 @@ Below are some visualizations of the data for ```subj0``` in sequence ```2021100
 [Official Dataset (Raw Data) link](https://sites.google.com/winlab.rutgers.edu/vi-fidataset/home)
 
 [paperswithcode link](https://paperswithcode.com/dataset/vi-fi-multi-modal-dataset)
+
+# Acknowledgement
+For synchronizing GPS data, please refer to [Vi-FiDatasetProcessing](https://github.com/Hai-chao-Zhang/Vi-FiDatasetProcessing). Thank [Hai-chao-Zhang](https://github.com/Hai-chao-Zhang) for contributing the scripts.
+
