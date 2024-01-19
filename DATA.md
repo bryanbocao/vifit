@@ -105,7 +105,7 @@ len(RGB_ts16_dfv4p4_ls):  2001
 The synchronized data treats RGB frame as anchor where all frames named after timestamps (ts16) are saved in ```RGB_ts16_dfv4p4_ls```. In this example, sequence ```20211007_144525``` has ```2001``` frames.
 
 ## Visualization
-Below are some visualizations of the data for ```subj0``` in sequence ```20211007_144525```. Note that by default, missing data points used nearest timestamp in the anchor (RGB) frame. Another way is by _linear interpolation_ denoted by ```li```, which is used to fill the missing data points of a modality (FTM or RSSI in 3FPS compared to RGB in 10FPS) by linearly interpolation between the borders of two consecutive logged data points.
+Below are some visualizations of the data for ```subj0``` in sequence ```20211007_144525```. Note that by default, missing data points are filled by aligning nearest timestamps in the anchor (RGB) frame. Another way is by _linear interpolation_ denoted by ```li```, which is used to fill the missing data points of a modality (FTM or RSSI in 3FPS compared to RGB in 10FPS) by linearly interpolation between the borders of two consecutive logged data points.
 
 All visualizations can be found in these links: [Google Drive](https://drive.google.com/drive/folders/1yVCX9zdPgZTb8k9VQmnJcji2qQ9zFdxr?usp=sharing), [OneDrive](https://1drv.ms/f/s!AqkVlEZgdjnYqz5NBqd7XWpK1qq7?e=Ek2SD0).
 
