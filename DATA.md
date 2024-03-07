@@ -115,7 +115,7 @@ All visualizations can be found in these links: [Google Drive](https://drive.goo
 ### IMU19
 <img width="1066" alt="20211007_144525_IMU19" src="https://github.com/bryanbocao/vitag/assets/14010288/e99744d9-1238-4ace-b1b5-7bbce57c4610">
 
-### IMUagm19
+### IMUagm9
 <img width="1062" alt="20211007_144525_IMUagm9" src="https://github.com/bryanbocao/vitag/assets/14010288/d64df45c-8fd2-4804-9fe8-ffcac9091501">
 
 ### FTM & FTM_li
